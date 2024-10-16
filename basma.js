@@ -5,7 +5,7 @@ function saveAndCheckPassword5() {
   const password5 = passwordInput5.value;
   const text5 = textInput5.value;
  // التحقق من كلمة المرور لحفظ النص    
-  if (password5 === "mostafa5") {    
+  if (password5 === "op5") {    
     // الحصول على النصوص المحفوظة أو إنشاء مصفوفة جديدة
     let savedTexts5 = JSON.parse(localStorage.getItem("savedTexts5")) || [];    
     savedTexts5.push(text5);

@@ -5,7 +5,7 @@ function saveAndCheckPassword4() {
   const password4 = passwordInput4.value;
   const text4 = textInput4.value;
  // التحقق من كلمة المرور لحفظ النص    
-  if (password4 === "mostafa4") {    
+  if (password4 === "ui4") {    
     // الحصول على النصوص المحفوظة أو إنشاء مصفوفة جديدة
     let savedTexts4 = JSON.parse(localStorage.getItem("savedTexts4")) || [];    
     savedTexts4.push(text4);

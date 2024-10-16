@@ -5,7 +5,7 @@ function saveAndCheckPassword3() {
   const password3 = passwordInput3.value;
   const text3 = textInput3.value;
  // التحقق من كلمة المرور لحفظ النص    
-  if (password3 === "mostafa3") {    
+  if (password3 === "ty3") {    
     // الحصول على النصوص المحفوظة أو إنشاء مصفوفة جديدة
     let savedTexts3 = JSON.parse(localStorage.getItem("savedTexts3")) || [];    
     savedTexts3.push(text3);
