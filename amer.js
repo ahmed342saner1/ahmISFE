@@ -30,7 +30,7 @@ function displaySavedTexts3() {
 // دالة لحذف جميع النصوص
 function deleteAllTexts3() {
   const deletePassword3 = prompt("أدخل كلمة المرور للحذف:");
-  if (deletePassword3 === "mostafadel") {
+  if (deletePassword3 === "delete") {
     localStorage.removeItem("savedTexts3");
     displaySavedTexts3(); // عرض قائمة فارغة بعد الحذف
     alert("تم حذف جميع النصوص بنجاح.");
