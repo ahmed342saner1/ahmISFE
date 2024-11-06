@@ -1,3 +1,6 @@
+
+
+
 function checkPassword() {
     var abdo = document.getElementById("passwordInput").value;
     var ahmed = document.getElementById("passwordInput").value;
@@ -24,3 +27,14 @@ function checkPassword() {
         document.getElementById("linkOutput").innerHTML = "<h2 class='a-2' >كلمة المرور غير صحيحة.</h2>";
     }
 }
+
+
+
+
+
+
+
+
+
+
+

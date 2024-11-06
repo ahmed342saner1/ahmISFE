@@ -1,4 +1,6 @@
 
+
+
 function saveAndCheckPassword7() {
     const passwordInput2 = document.getElementById("passwordteather2"); 
    const textInput7 = document.getElementById("myInput7");   

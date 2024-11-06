@@ -81,113 +81,35 @@ hr {
 .hr1 {
     margin: 10px 420px 20px 420px;
 }
-.teather{
-    padding: 0px 20px 20px 200px ;
-    display: flex;
-    margin: 0px 0px 0px 30px ;
+.btn{
+background-color: #faad06;
 }
-.btn {
-    margin: 0px 0px 37px 8px;
-line-height: 30px;
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: 26px;
-    --border-color: linear-gradient(-45deg, #ffae00, #f7d5a8, #ffae00);
-    --border-width: 0.125em;
-    --curve-size: 0.5em;
-    --blur: 30px;
-    --bg: #080312;
-    --color: #afffff;
-    color: var(--color);
-    cursor: pointer;
-    /* use position: relative; so that BG is only for .btn */
-    position: relative;
-    isolation: isolate;
-    display: inline-grid;
-    place-content: center;
-    padding: 0.5em 1.5em;
-    font-size: 17px;
-    border: 0;
-    text-transform: uppercase;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
-    clip-path: polygon(
-      /* Top-left */ 0% var(--curve-size),
-      var(--curve-size) 0,
-      /* top-right */ 100% 0,
-      100% calc(100% - var(--curve-size)),
-      /* bottom-right 1 */ calc(100% - var(--curve-size)) 100%,
-      /* bottom-right 2 */ 0 100%
-    );
-    transition: color 250ms;
-  }
-  
-  .btn::after,
-  .btn::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-  }
-  
-  .btn::before {
-    background: var(--border-color);
-    background-size: 300% 300%;
-    animation: move-bg7234 5s ease infinite;
-    z-index: -2;
-  }
-  
-  @keyframes move-bg7234 {
-    0% {
-      background-position: 31% 0%;
-    }
-  
-    50% {
-      background-position: 70% 100%;
-    }
-  
-    100% {
-      background-position: 31% 0%;
-    }
-  }
-  
-  .btn::after {
-    background: var(--bg);
-    z-index: -1;
-    clip-path: polygon(
-      /* Top-left */ var(--border-width)
-        calc(var(--curve-size) + var(--border-width) * 0.5),
-      calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
-      /* top-right */ calc(100% - var(--border-width)) var(--border-width),
-      calc(100% - var(--border-width))
-        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-      /* bottom-right 1 */
-        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-        calc(100% - var(--border-width)),
-      /* bottom-right 2 */ var(--border-width) calc(100% - var(--border-width))
-    );
-    transition: clip-path 500ms;
-  }
-  
-  .btn:where(:hover, :focus)::after {
-    clip-path: polygon(
-      /* Top-left */ calc(100% - var(--border-width))
-        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-      calc(100% - var(--border-width)) var(--border-width),
-      /* top-right */ calc(100% - var(--border-width)) var(--border-width),
-      calc(100% - var(--border-width))
-        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-      /* bottom-right 1 */
-        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-        calc(100% - var(--border-width)),
-      /* bottom-right 2 */
-        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-        calc(100% - var(--border-width))
-    );
-    transition: 200ms;
-  }
-  
-  .btn:where(:hover, :focus) {
-    color: #fff;
-  }
+button {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
 
+button::before {
+  margin-left: auto;
+}
+
+button::after, button::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  transition: 0.5s;
+}
+
+button:hover::after, button:hover::before {
+  width: 100%;
+}
 .password {
      margin: 0px 22px 26px 14px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -197,10 +119,10 @@ font-size: 26px;
     width: 290px;
     height: 30px;
     padding: 10px;
-    /* text-align: center; */
+     text-align: center;
     border: 2px solid white;
     border-radius: 5px;
-    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+   
   }
   
   .password:focus {
@@ -219,10 +141,9 @@ font-size: 26px;
     max-width: 290px;
     height: 30px;
     padding: 10px;
-    /* text-align: center; */
+    text-align: center;
     border: 2px solid white;
     border-radius: 5px;
-    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
   }
   
   .text1:focus {

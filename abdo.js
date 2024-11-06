@@ -1,4 +1,7 @@
-function saveAndCheckPassword() {
+  
+
+
+ function saveAndCheckPassword() {
       // الحصول على قيم المدخلات
       const passwordInput = document.getElementById("passwordteather"); 
       const textInput = document.getElementById("myInput");   
@@ -206,6 +209,12 @@ function saveAndCheckPassword6() {
  resultDiv6.appendChild(newParagraph6);
  });
  }
+
+
+
+
+
+ 
 // دالة لحذف جميع النصوص
 function deleteAllTexts1() {
   const deletePassword1 = prompt("أدخل كلمة المرور للحذف:");
